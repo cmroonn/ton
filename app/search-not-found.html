@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>T-On | Каталог</title>
+    <title>T-On | Поиск</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -88,7 +88,7 @@
                     </button>
 
                     <form class="header__searchbar">
-                        <input type="search" class="header__searchbar__field" placeholder="Я ищу...">
+                        <input type="search" class="header__searchbar__field" placeholder="Я ищу..." value="Гели">
                         <button type="submit" class="header__searchbar__submit">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6362 0C16.5103 0 21.2723 4.8268 21.2723 10.781C21.2723 13.1746 20.5027 15.3861 19.2006 17.175L28 26.0942L26.1198 28L17.3675 19.1286C15.534 20.6495 13.1902 21.5619 10.6362 21.5619C4.76197 21.5619 0 16.7351 0 10.781C0 4.8268 4.76197 0 10.6362 0ZM10.6362 20.2682C15.8054 20.2682 19.996 16.0206 19.996 10.781C19.996 5.5413 15.8054 1.29372 10.6362 1.29372C5.46687 1.29372 1.27634 5.5413 1.27634 10.781C1.27634 16.0206 5.46687 20.2682 10.6362 20.2682Z" fill="white"/>
@@ -126,7 +126,7 @@
         </header>
         <div class="container page-up__wrapper">
             <section class="page-up" style="background-image: url('images/pageup.jpeg')">
-                <h1 class="page-up__title">Каталог</h1>
+                <h1 class="page-up__title">Поиск</h1>
             </section>
         </div>
 
@@ -136,506 +136,153 @@
                     <a href="/">Главная</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    Каталог
+                    Поиск
                 </li>
             </ul>
 
-            <section class="catalog__control-panel">
-                <!-- count items to show -->
-                <div class="catalog__control-panel__show">
-                    Показывать:
+            <h2 class="search-message">
+                По вашему запросу «sdfasf» ничего не найдено.
+            </h2>
 
-                    <ul>
-                        <li class="active">
-                            <a href="#">18</a>
-                        </li>
-                        <li>
-                            <a href="#">24</a>
-                        </li>
-                        <li>
-                            <a href="#">36</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="d-flex ai-center">
-                    <!-- sort items by -->
-                    <div class="catalog__control-panel__sort">
-                        Сортировать:
-
-                        <select>
-                            <option value="По умолчанию">по умолчанию</option>
-
-                            <option value="По цене">по цене</option>
-                        </select>
-                    </div>
-
-                </div>
-            </section>
         </div>
 
 
-        <section class="catalog">
+
+        <section class="products">
             <div class="container">
-                <div class="catalog__content">
-                    <div class="catalog__content__filters">
-                        <button type="button" class="catalog__btnFilters">
-                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.61747 7.77049C10.1275 8.28052 10.1275 9.10744 9.61747 9.61748C9.10744 10.1275 8.28052 10.1275 7.77048 9.61748L0.382524 2.22951C-0.127508 1.71948 -0.127508 0.892557 0.382524 0.382524C0.892556 -0.127508 1.71948 -0.127508 2.22951 0.382524L9.61747 7.77049Z" fill="#AEAEAE"></path>
-                                <path d="M2.22951 9.61748C1.71948 10.1275 0.892556 10.1275 0.382524 9.61748C-0.127508 9.10744 -0.127508 8.28052 0.382524 7.77049L7.77049 0.382525C8.28052 -0.127507 9.10744 -0.127507 9.61748 0.382525C10.1275 0.892558 10.1275 1.71948 9.61748 2.22952L2.22951 9.61748Z" fill="#AEAEAE"></path>
-                            </svg>
+                <h2 class="section-title products__title">
+                    Возможно, вас заинтересует
+                </h2>
 
-                            Закрыть фильтры
+
+                <div class="products__content">
+                    <div class="products__item products__item-sale">
+                        <div class="products__item__preview">
+                            <img src="images/prod-card.jpeg" alt="">
+                            <a href="" class="products__item__preview__link"></a>
+                        </div>
+
+                        <h3 class="products__item__heading">
+                            <a href="">
+                                Фитнес батончики Fit&Taste&nbsp;Strawberry
+                            </a>
+                        </h3>
+
+                        <div class="products__item__price">
+                            <p class="products__item__price__current">
+                                1229р
+                            </p>
+
+                            <span class="products__item__price__old">
+                  1820р
+                </span>
+                        </div>
+
+                        <button type="button" class="products__item__button basic-btn">
+                            В корзину
                         </button>
-
-                        <div class="filter_block_wrap">
-                            <!-- all filters -->
-                            <div class="filter_block show">
-                                <p class="d-flex ai-center jc-between filter_block__heading">
-                                    Бренд
-
-                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M7 3.34638L1.67455 8L0 6.11692L7 0L14 6.11692L12.3254 8L7 3.34638Z" fill="#404040"></path>
-                                    </svg>
-
-                                </p>
-
-                                <div class="filter_block__points">
-                                    <label class="checkbox filter_block__point">
-                                        <input type="checkbox" name="size">
-
-                                        <span> Марс </span>
-                                    </label>
-
-                                    <label class="checkbox filter_block__point">
-                                        <input type="checkbox" name="size">
-
-                                        <span> Сникерс </span>
-                                    </label>
-
-                                    <label class="checkbox filter_block__point">
-                                        <input type="checkbox" name="size">
-
-                                        <span> Баунти </span>
-                                    </label>
-
-                                    <label class="checkbox filter_block__point">
-                                        <input type="checkbox" name="size">
-
-                                        <span> Киндер </span>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="filter_block">
-                                <p class="d-flex ai-center jc-between filter_block__heading">
-                                    Цена (₽)
-
-                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M7 3.34638L1.67455 8L0 6.11692L7 0L14 6.11692L12.3254 8L7 3.34638Z" fill="#404040"></path>
-                                    </svg>
-
-                                </p>
-
-                                <div class="filter_block__points">
-                                    <div class="filter_block__slider">
-                                        <div id="slider-price" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 7.5%; width: 22.5%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 7.5%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 30%;"></span></div>
-
-                                        <div class="filter_block__slider__res">
-                                            <input id="price-min" readonly="">
-                                            –
-                                            <input id="price-max" readonly="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="filter_block">
-                                <p class="d-flex ai-center jc-between filter_block__heading">
-                                    Харкатеристика
-
-                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M7 3.34638L1.67455 8L0 6.11692L7 0L14 6.11692L12.3254 8L7 3.34638Z" fill="#404040"></path>
-                                    </svg>
-
-                                </p>
-
-                                <div class="filter_block__points">
-                                    <label class="checkbox filter_block__point">
-                                        <input type="checkbox" name="size">
-
-                                        <span> Фермерская </span>
-                                    </label>
-
-                                    <label class="checkbox filter_block__point">
-                                        <input type="checkbox" name="size">
-
-                                        <span> Кошерная </span>
-                                    </label>
-
-                                    <label class="checkbox filter_block__point">
-                                        <input type="checkbox" name="size">
-
-                                        <span> Халяль </span>
-                                    </label>
-
-                                    <label class="checkbox filter_block__point">
-                                        <input type="checkbox" name="size">
-
-                                        <span> Без лактозы </span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="catalog__content__filters__buttons">
-                            <button class="catalog__content__filters__buttons__clear">
-                                Сбросить
-                            </button>
-
-                            <button class="catalog__content__filters__buttons__show">
-                                Показать
-                            </button>
-                        </div>
-
                     </div>
 
-
-                    <div class="catalogs__content__prods">
-                        <div class="catalogs__content__prods__items">
-                            <div class="products__item">
-                                <div class="products__item__preview">
-                                    <img src="images/prod-card.jpeg" alt="">
-                                </div>
-
-                                <h3 class="products__item__heading">
-                                    Фитнес батончики Fit&Taste
-                                </h3>
-
-                                <div class="products__item__price">
-                                    <p class="products__item__price__current">
-                                        1229р
-                                    </p>
-
-                                    <span class="products__item__price__old">
-                  1820р
-                </span>
-                                </div>
-
-                                <button type="button" class="products__item__button basic-btn">
-                                    В корзину
-                                </button>
-                            </div>
-
-                            <div class="products__item">
-                                <div class="products__item__preview">
-                                    <img src="images/prod-card.jpeg" alt="">
-                                </div>
-
-                                <h3 class="products__item__heading">
-                                    Фитнес батончики Fit&Taste
-                                </h3>
-
-                                <div class="products__item__price">
-                                    <p class="products__item__price__current">
-                                        1229р
-                                    </p>
-
-                                    <span class="products__item__price__old">
-                  1820р
-                </span>
-                                </div>
-
-                                <button type="button" class="products__item__button basic-btn">
-                                    В корзину
-                                </button>
-                            </div>
-
-                            <div class="products__item">
-                                <div class="products__item__preview">
-                                    <img src="images/prod-card.jpeg" alt="">
-                                </div>
-
-                                <h3 class="products__item__heading">
-                                    Фитнес батончики Fit&Taste
-                                </h3>
-
-                                <div class="products__item__price">
-                                    <p class="products__item__price__current">
-                                        1229р
-                                    </p>
-
-                                    <span class="products__item__price__old">
-                  1820р
-                </span>
-                                </div>
-
-                                <button type="button" class="products__item__button basic-btn">
-                                    В корзину
-                                </button>
-                            </div>
-
-                            <div class="products__item">
-                                <div class="products__item__preview">
-                                    <img src="images/prod-card.jpeg" alt="">
-                                </div>
-
-                                <h3 class="products__item__heading">
-                                    Фитнес батончики Fit&Taste
-                                </h3>
-
-                                <div class="products__item__price">
-                                    <p class="products__item__price__current">
-                                        1229р
-                                    </p>
-
-                                    <span class="products__item__price__old">
-                  1820р
-                </span>
-                                </div>
-
-                                <button type="button" class="products__item__button basic-btn">
-                                    В корзину
-                                </button>
-                            </div>
-
-                            <div class="products__item">
-                                <div class="products__item__preview">
-                                    <img src="images/prod-card.jpeg" alt="">
-                                </div>
-
-                                <h3 class="products__item__heading">
-                                    Фитнес батончики Fit&Taste
-                                </h3>
-
-                                <div class="products__item__price">
-                                    <p class="products__item__price__current">
-                                        1229р
-                                    </p>
-
-                                    <span class="products__item__price__old">
-                  1820р
-                </span>
-                                </div>
-
-                                <button type="button" class="products__item__button basic-btn">
-                                    В корзину
-                                </button>
-                            </div>
-
-                            <div class="products__item products__item-sale">
-                                <div class="products__item__preview">
-                                    <img src="images/prod-card.jpeg" alt="">
-                                    <a href="" class="products__item__preview__link"></a>
-                                </div>
-
-                                <h3 class="products__item__heading">
-                                    <a href="">
-                                        Фитнес батончики Fit&Taste&nbsp;Strawberry
-                                    </a>
-                                </h3>
-
-                                <div class="products__item__price">
-                                    <p class="products__item__price__current">
-                                        1229р
-                                    </p>
-
-                                    <span class="products__item__price__old">
-                  1820р
-                </span>
-                                </div>
-
-                                <button type="button" class="products__item__button basic-btn">
-                                    В корзину
-                                </button>
-                            </div>
-
-                            <div class="products__item products__item-sale">
-                                <div class="products__item__preview">
-                                    <img src="images/prod-card.jpeg" alt="">
-                                    <a href="" class="products__item__preview__link"></a>
-                                </div>
-
-                                <h3 class="products__item__heading">
-                                    <a href="">
-                                        Фитнес батончики Fit&Taste&nbsp;Strawberry
-                                    </a>
-                                </h3>
-
-                                <div class="products__item__price">
-                                    <p class="products__item__price__current">
-                                        1229р
-                                    </p>
-
-                                    <span class="products__item__price__old">
-                  1820р
-                </span>
-                                </div>
-
-                                <button type="button" class="products__item__button basic-btn">
-                                    В корзину
-                                </button>
-                            </div>
-
-                            <div class="products__item">
-                                <div class="products__item__preview">
-                                    <img src="images/prod-card.jpeg" alt="">
-                                </div>
-
-                                <h3 class="products__item__heading">
-                                    Фитнес батончики Fit&Taste
-                                </h3>
-
-                                <div class="products__item__price">
-                                    <p class="products__item__price__current">
-                                        1229р
-                                    </p>
-
-                                    <span class="products__item__price__old">
-                  1820р
-                </span>
-                                </div>
-
-                                <button type="button" class="products__item__button basic-btn">
-                                    В корзину
-                                </button>
-                            </div>
-
-                            <div class="products__item products__item-sale">
-                                <div class="products__item__preview">
-                                    <img src="images/prod-card.jpeg" alt="">
-                                    <a href="" class="products__item__preview__link"></a>
-                                </div>
-
-                                <h3 class="products__item__heading">
-                                    <a href="">
-                                        Фитнес батончики Fit&Taste&nbsp;Strawberry
-                                    </a>
-                                </h3>
-
-                                <div class="products__item__price">
-                                    <p class="products__item__price__current">
-                                        1229р
-                                    </p>
-
-                                    <span class="products__item__price__old">
-                  1820р
-                </span>
-                                </div>
-
-                                <button type="button" class="products__item__button basic-btn">
-                                    В корзину
-                                </button>
-                            </div>
-
-                            <div class="products__item">
-                                <div class="products__item__preview">
-                                    <img src="images/prod-card.jpeg" alt="">
-                                </div>
-
-                                <h3 class="products__item__heading">
-                                    Фитнес батончики Fit&Taste
-                                </h3>
-
-                                <div class="products__item__price">
-                                    <p class="products__item__price__current">
-                                        1229р
-                                    </p>
-
-                                    <span class="products__item__price__old">
-                  1820р
-                </span>
-                                </div>
-
-                                <button type="button" class="products__item__button basic-btn">
-                                    В корзину
-                                </button>
-                            </div>
-
-                            <div class="products__item">
-                                <div class="products__item__preview">
-                                    <img src="images/prod-card.jpeg" alt="">
-                                </div>
-
-                                <h3 class="products__item__heading">
-                                    Фитнес батончики Fit&Taste
-                                </h3>
-
-                                <div class="products__item__price">
-                                    <p class="products__item__price__current">
-                                        1229р
-                                    </p>
-
-                                    <span class="products__item__price__old">
-                  1820р
-                </span>
-                                </div>
-
-                                <button type="button" class="products__item__button basic-btn">
-                                    В корзину
-                                </button>
-                            </div>
-
-                            <div class="products__item">
-                                <div class="products__item__preview">
-                                    <img src="images/prod-card.jpeg" alt="">
-                                </div>
-
-                                <h3 class="products__item__heading">
-                                    Фитнес батончики Fit&Taste
-                                </h3>
-
-                                <div class="products__item__price">
-                                    <p class="products__item__price__current">
-                                        1229р
-                                    </p>
-
-                                    <span class="products__item__price__old">
-                  1820р
-                </span>
-                                </div>
-
-                                <button type="button" class="products__item__button basic-btn">
-                                    В корзину
-                                </button>
-                            </div>
+                    <div class="products__item">
+                        <div class="products__item__preview">
+                            <img src="images/prod-card.jpeg" alt="">
                         </div>
 
-                        <ul class="pagination-pages d-flex">
-                            <li class="pagination-pages__item">
-                                <a href="#">
-                                    1
-                                </a>
-                            </li>
+                        <h3 class="products__item__heading">
+                            Фитнес батончики Fit&Taste
+                        </h3>
 
-                            <li class="pagination-pages__item">
-                                <a href="#">
-                                    2
-                                </a>
-                            </li>
+                        <div class="products__item__price">
+                            <p class="products__item__price__current">
+                                1229р
+                            </p>
 
-                            <li class="pagination-pages__item">
-                                <a href="#" class="active">
-                                    3
-                                </a>
-                            </li>
+                            <span class="products__item__price__old">
+                  1820р
+                </span>
+                        </div>
 
-                            <li class="pagination-pages__item">
-                                <a href="#">
-                                    4
-                                </a>
-                            </li>
+                        <button type="button" class="products__item__button basic-btn">
+                            В корзину
+                        </button>
+                    </div>
 
-                            <li class="pagination-pages__item">
-                                <a href="#">
-                                    5
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="products__item">
+                        <div class="products__item__preview">
+                            <img src="images/prod-card.jpeg" alt="">
+                        </div>
+
+                        <h3 class="products__item__heading">
+                            Фитнес батончики Fit&Taste
+                        </h3>
+
+                        <div class="products__item__price">
+                            <p class="products__item__price__current">
+                                1229р
+                            </p>
+
+                            <span class="products__item__price__old">
+                  1820р
+                </span>
+                        </div>
+
+                        <button type="button" class="products__item__button basic-btn">
+                            В корзину
+                        </button>
+                    </div>
+
+                    <div class="products__item">
+                        <div class="products__item__preview">
+                            <img src="images/prod-card.jpeg" alt="">
+                        </div>
+
+                        <h3 class="products__item__heading">
+                            Фитнес батончики Fit&Taste
+                        </h3>
+
+                        <div class="products__item__price">
+                            <p class="products__item__price__current">
+                                1229р
+                            </p>
+
+                            <span class="products__item__price__old">
+                  1820р
+                </span>
+                        </div>
+
+                        <button type="button" class="products__item__button basic-btn">
+                            В корзину
+                        </button>
+                    </div>
+
+                    <div class="products__item">
+                        <div class="products__item__preview">
+                            <img src="images/prod-card.jpeg" alt="">
+                        </div>
+
+                        <h3 class="products__item__heading">
+                            Фитнес батончики Fit&Taste
+                        </h3>
+
+                        <div class="products__item__price">
+                            <p class="products__item__price__current">
+                                1229р
+                            </p>
+
+                            <span class="products__item__price__old">
+                  1820р
+                </span>
+                        </div>
+
+                        <button type="button" class="products__item__button basic-btn">
+                            В корзину
+                        </button>
                     </div>
                 </div>
+
             </div>
         </section>
+
 
         <footer class="footer" id="footer">
             <div class="container footer-wrapper">

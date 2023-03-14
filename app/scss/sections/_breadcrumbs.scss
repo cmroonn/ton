@@ -1,0 +1,30 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  padding-bottom: calc(25 / 1920 * 100vw);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  margin-top: calc(25 / 1920 * 100vw);
+}
+
+.breadcrumbs__item {
+  margin-right: calc(15 / 1920 * 100vw);
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+
+  &:after {
+    content: "";
+    width: calc(10 / 1920 * 100vw);
+    height: calc(10 / 1920 * 100vw);
+    background-size: 100% 100%;
+    background-image: url("../images/icons/arrow-right.svg");
+    display: block;
+    margin-left: calc(15 / 1920 * 100vw);
+  }
+
+  &:last-child {
+    &:after {
+      display: none;
+    }
+  }
+}
