@@ -1,21 +1,21 @@
 .pagination-pages {
   align-items: center;
   justify-content: center;
-  margin-top: calc(50 / 1920 * 100vw);
+  margin-top: calc(50 / var(--screensize) * 100vw);
 }
 
 .pagination-pages__item {
-  margin-right: calc(11 / 1920 * 100vw);
+  margin-right: calc(11 / var(--screensize) * 100vw);
   a {
-    width: calc(42 / 1920 * 100vw);
-    height: calc(42 / 1920 * 100vw);
+    width: calc(42 / var(--screensize) * 100vw);
+    height: calc(42 / var(--screensize) * 100vw);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     color: rgba(255, 255, 255, .8);
     transition: .2s ease;
-    font-size: calc(18 / 1920 * 100vw);
+    font-size: calc(18 / var(--screensize) * 100vw);
 
     &.active {
       color: #fff;

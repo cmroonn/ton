@@ -1,5 +1,5 @@
 .blog-latest {
-  min-height: calc(400 / 1920 * 100vw);
+  min-height: calc(400 / var(--screensize) * 100vw);
   background-image: url("../images/bg-blog.jpeg");
   background-size: cover;
   display: flex;
@@ -7,29 +7,29 @@
 }
 
 .blog-latest__content {
-  padding-left: calc(62 / 1920 * 100vw);
+  padding-left: calc(62 / var(--screensize) * 100vw);
 }
 
 .blog-latest__msg {
   font-weight: 300;
-  font-size: calc(16 / 1920 * 100vw);
+  font-size: calc(16 / var(--screensize) * 100vw);
   text-transform: uppercase;
 }
 
 .blog-latest__title {
-  font-size: calc(48 / 1920 * 100vw);
-  max-width: calc(760 / 1920 * 100vw);
-  margin: calc(21 / 1920 * 100vw) 0 calc(42 / 1920 * 100vw);
+  font-size: calc(48 / var(--screensize) * 100vw);
+  max-width: calc(760 / var(--screensize) * 100vw);
+  margin: calc(21 / var(--screensize) * 100vw) 0 calc(42 / var(--screensize) * 100vw);
 }
 
 
 .blog {
-  margin-top: calc(50 / 1920 * 100vw);
+  margin-top: calc(50 / var(--screensize) * 100vw);
 }
 
 
 .blog__content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: calc(15 / 1920 * 100vw);
+  grid-gap: calc(15 / var(--screensize) * 100vw);
 }
